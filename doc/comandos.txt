@@ -1,0 +1,14 @@
+$ yosys -p "synth_ice40 -blif test.blif" test.v
+$ arachne-pnr -d 1k -p test.pcf test.blif -o test.txt
+$ icepack test.txt test.bin
+$ iceprog test.bin
+
+
+#-- Compilar
+iverilog setbit.v setbit_tb.v -o setbit_tb.out
+#-- Simular
+./setbit_tb.out
+VCD info: dumpfile setbit_tb.vcd opened for output.
+Componente ok!
+#-- Ver visualmente la simulacion con gtkwave
+gtkwave setbit_tb.vcd setbit_tb.gtkw &
