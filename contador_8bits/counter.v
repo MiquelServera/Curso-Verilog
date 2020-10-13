@@ -7,7 +7,7 @@ wire clk;
 
 reg [7:0] data = 0;	//-- la salida es un registro de 8bits inicializado a 0
 
-parameter N = 21;	//-- parametro para el prescaler
+parameter N = 22;	//-- parametro para el prescaler
 
 wire clk_pres;		//-- reloj de salida del prescaler
 
