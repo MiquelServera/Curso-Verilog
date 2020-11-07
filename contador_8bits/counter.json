@@ -1,0 +1,109 @@
+{
+  "creator": "Yosys 0.9+3565 (git sha1 474cd02e, clang 10.0.0-4ubuntu1 -fPIC -Os)",
+  "modules": {
+    "counter": {
+      "attributes": {
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "counter.v:4.1-26.10"
+      },
+      "parameter_default_values": {
+        "N": "00000000000000000000000000010110"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "data": {
+          "direction": "output",
+          "bits": [ 3, 4, 5, 6, 7, 8, 9, 10 ]
+        }
+      },
+      "cells": {
+        "$add$counter.v:23$2": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "counter.v:23.10-23.18"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3, 4, 5, 6, 7, 8, 9, 10 ],
+            "B": [ "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42 ]
+          }
+        },
+        "pres1": {
+          "hide_name": 0,
+          "type": "prescaler",
+          "parameters": {
+            "N": "00000000000000000000000000010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "counter.v:16.1-19.2"
+          },
+          "connections": {
+            "clk_in": [ 2 ],
+            "clk_out": [ 43 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\data[7:0]": {
+          "hide_name": 1,
+          "bits": [ 44, 45, 46, 47, 48, 49, 50, 51 ],
+          "attributes": {
+            "src": "counter.v:22.1-24.4"
+          }
+        },
+        "$1\\data[7:0]": {
+          "hide_name": 1,
+          "bits": [ 52, 53, 54, 55, 56, 57, 58, 59 ],
+          "attributes": {
+            "src": "counter.v:8.11-8.19"
+          }
+        },
+        "$add$counter.v:23$2_Y": {
+          "hide_name": 1,
+          "bits": [ 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42 ],
+          "attributes": {
+            "src": "counter.v:23.10-23.18"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "counter.v:4.22-4.25"
+          }
+        },
+        "clk_pres": {
+          "hide_name": 0,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "counter.v:12.6-12.14"
+          }
+        },
+        "data": {
+          "hide_name": 0,
+          "bits": [ 3, 4, 5, 6, 7, 8, 9, 10 ],
+          "attributes": {
+            "src": "counter.v:4.40-4.44"
+          }
+        }
+      }
+    }
+  }
+}
