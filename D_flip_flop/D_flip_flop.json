@@ -1,0 +1,287 @@
+{
+  "creator": "Yosys 0.9+3565 (git sha1 474cd02e, clang 10.0.0-4ubuntu1 -fPIC -Os)",
+  "modules": {
+    "dff": {
+      "attributes": {
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "D_flip_flop.v:5.1-21.10"
+      },
+      "ports": {
+        "D": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "CLK": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "Qbar": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$and$D_flip_flop.v:14$2": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D_flip_flop.v:14.5-14.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 3 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$and$D_flip_flop.v:15$3": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D_flip_flop.v:15.5-15.23"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$not$D_flip_flop.v:0$1": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D_flip_flop.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$not$D_flip_flop.v:0$5": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D_flip_flop.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "Y": [ 4 ]
+          }
+        },
+        "$not$D_flip_flop.v:0$7": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D_flip_flop.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "Y": [ 5 ]
+          }
+        },
+        "$or$D_flip_flop.v:18$4": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D_flip_flop.v:18.5-18.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 5 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$or$D_flip_flop.v:19$6": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D_flip_flop.v:19.5-19.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 4 ],
+            "Y": [ 10 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and$D_flip_flop.v:14$2_Y": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "D_flip_flop.v:14.5-14.24"
+          }
+        },
+        "$and$D_flip_flop.v:15$3_Y": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "D_flip_flop.v:15.5-15.23"
+          }
+        },
+        "$not$D_flip_flop.v:0$1_Y": {
+          "hide_name": 1,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "D_flip_flop.v:0.0-0.0"
+          }
+        },
+        "$not$D_flip_flop.v:0$5_Y": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "D_flip_flop.v:0.0-0.0"
+          }
+        },
+        "$not$D_flip_flop.v:0$7_Y": {
+          "hide_name": 1,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "D_flip_flop.v:0.0-0.0"
+          }
+        },
+        "$or$D_flip_flop.v:18$4_Y": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "D_flip_flop.v:18.5-18.24"
+          }
+        },
+        "$or$D_flip_flop.v:19$6_Y": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "D_flip_flop.v:19.5-19.24"
+          }
+        },
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "D_flip_flop.v:6.16-6.19"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "D_flip_flop.v:6.13-6.14"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "D_flip_flop.v:7.14-7.15"
+          }
+        },
+        "Qbar": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "D_flip_flop.v:7.17-7.21"
+          }
+        },
+        "_D": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "D_flip_flop.v:11.8-11.10"
+          }
+        },
+        "out_g2": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "D_flip_flop.v:14.8-14.14"
+          }
+        },
+        "out_g3": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "D_flip_flop.v:15.8-15.14"
+          }
+        }
+      }
+    }
+  }
+}
