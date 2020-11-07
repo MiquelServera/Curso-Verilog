@@ -1,0 +1,4 @@
+set_io entrada 11
+set_io led 102
+set_io oe 10
+set_io dout 144
