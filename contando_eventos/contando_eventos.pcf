@@ -1,0 +1,8 @@
+set_io clk 21
+set_io cnt 144
+set_io cnt_rst 143
+set_io ff_rst 142
+set_io data[2] 117
+set_io data[1] 118
+set_io data[0] 119
+set_io ov 116
